@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "Tableau de bord";
+}
+
+<div class="container-fluid py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="fw-bold">PharmaFlow</h1>
+            <p class="text-secondary">
+                Tableau de bord de gestion de votre pharmacie
+            </p>
+        </div>
+        <span class="badge bg-success fs-6">Pharmacie</span>
+    </div>
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-secondary mb-2">Produits enregistrés</p>
+                    <h2 class="fw-bold">0</h2>
+                    <span class="text-secondary">Aucun produit chargé</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-secondary mb-2">Ventes du jour</p>
+                    <h2 class="fw-bold">0 FCFA</h2>
+                    <span class="text-secondary">Aucune vente enregistrée</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body">
+                    <p class="text-secondary mb-2">Stock à surveiller</p>
+                    <h2 class="fw-bold">0</h2>
+                    <span class="text-secondary">Produit à réapprovisionner</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card shadow-sm border-0">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="fw-bold mb-0">Produits récents</h4>
+                <button class="btn btn-success" disabled>
+                    + Ajouter un produit
+                </button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Produit</th>
+                            <th>Catégorie</th>
+                            <th>Quantité</th>
+                            <th>Prix unitaire</th>
+                            <th>État du stock</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="5" class="text-center text-secondary py-4">
+                                Aucun produit pour le moment.
+                                Les fonctionnalités seront ajoutées progressivement.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
